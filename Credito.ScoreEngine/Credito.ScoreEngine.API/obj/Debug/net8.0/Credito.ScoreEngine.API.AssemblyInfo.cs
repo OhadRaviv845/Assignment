@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Credito.ScoreEngine.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8dbbc37f06e6ecca4728700037f36f520563ad49")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e72f9d30acd8d3d7bd7ca573089d5b2b4529df62")]
 [assembly: System.Reflection.AssemblyProductAttribute("Credito.ScoreEngine.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Credito.ScoreEngine.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

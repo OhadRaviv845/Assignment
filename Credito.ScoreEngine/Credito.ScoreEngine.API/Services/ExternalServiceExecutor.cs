@@ -40,7 +40,7 @@ public class ExternalServiceExecutor
             try
             {
                 _logger.LogInformation(
-                    "Executing service {ServiceName} with ID {ExecutionId}. Attempt {Attempt}/{MaxRetries}",
+                    "Service {ServiceName} - ID: {ExecutionId} - Attempt: {Attempt}/{MaxRetries}",
                     request.ServiceName, executionId, retryCount + 1, config.MaxRetries);
 
                 Dictionary<string, object> result;
@@ -84,7 +84,7 @@ public class ExternalServiceExecutor
                 };
 
                 _logger.LogInformation(
-                    "Service {ServiceName} executed successfully. ID: {ExecutionId}, Duration: {Duration}ms",
+                    "Service {ServiceName} - ID: {ExecutionId} - Duration: {Duration}ms - Status: Success",
                     request.ServiceName, executionId, stopwatch.ElapsedMilliseconds);
 
                 return serviceResponse;

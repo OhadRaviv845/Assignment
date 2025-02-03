@@ -32,17 +32,19 @@ public class ScoringController : ControllerBase
         catch (ServiceUnavailableException ex)
         {
             return StatusCode(StatusCodes.Status503ServiceUnavailable, 
-                new { message = ex.Message });
+                new { statusCode = 503, message = ex.Message });
         }
         catch (KeyNotFoundException ex)
         {
-            return NotFound(new { message = ex.Message });
+            return NotFound(
+                new { statusCode = 404, message = ex.Message });
         }
         catch (Exception ex)
         {
             _logger.LogError(ex, "Error processing request for service {ServiceName}", 
                 request.ServiceName);
-            return StatusCode(500, new { message = "Internal server error" });
+            return StatusCode(500, 
+                new { statusCode = 500, message = "Internal server error" });
         }
     }
 }
