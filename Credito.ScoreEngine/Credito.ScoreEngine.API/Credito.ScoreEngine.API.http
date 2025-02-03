@@ -1,0 +1,6 @@
+@Credito.ScoreEngine.API_HostAddress = http://localhost:5167
+
+GET {{Credito.ScoreEngine.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
