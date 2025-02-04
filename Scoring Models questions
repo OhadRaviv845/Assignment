@@ -47,12 +47,4 @@ Implement logging to capture execution details, such as:
 - Execution times
 - Error rates
 
-This is crucial for maintaining system health and facilitating troubleshooting once the real models are integrated.
-
-## Contributing
-
-Please read our [Contributing Guide](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This is crucial for maintaining system health and troubleshooting once the real models are integrated.
