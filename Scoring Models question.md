@@ -1,6 +1,6 @@
 # Integration of Scoring Models
 
-This document outlines our approach to integrating scoring models, focusing on quality, testability, and seamless production deployment.
+This document outlines the way to integrating scoring models, focusing on quality, testability, and seamless production deployment.
 
 ## 1. Test-Driven Development (TDD) Approach
 
@@ -8,7 +8,7 @@ This document outlines our approach to integrating scoring models, focusing on q
 Begin by writing tests that define the expected behavior of the scoring model integration. These tests specify how the system should react to various inputs and scenarios.
 
 ### Mocking Dependencies
-Use dependency injection so that during testing, a mock or stub version of the scoring model can be substituted for the actual implementation. This allows you to isolate the component under test.
+Use dependency injection so that during testing, a mock or stub version of the scoring model can be substituted for the actual implementation. This allows us to isolate the component under test.
 
 ### Iterative Implementation
 Start with tests that initially fail, then implement the minimal code required to pass these tests. This iterative approach ensures that every feature is driven by a corresponding test, which helps maintain code quality.
